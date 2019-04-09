@@ -15,6 +15,7 @@ module.exports = (context) => ({
   ready () {
     const home = context.pages.find(({ path }) => path === '/')
     home.frontmatter.layout = 'NotFound'
+    home.frontmatter.title = '404 Not Found'
   },
 
   themeConfig: {
